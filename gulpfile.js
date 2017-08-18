@@ -18,9 +18,10 @@ gulp.task('server', function() {
 
 // 任务：编译sass文件
 gulp.task('scss', function() {
-    gulp.src('assets/scss/*.scss')
-        .pipe(scss())
-        .pipe(gulp.dest('assets/css'));
+    return gulp.src("assets/scss/*.scss")
+        .pipe(scss({ outputStyle: 'expanded' }).on('error', scss.logError))
+        .pipe(gulp.dest("assets/css"))
+        .pipe(reload({ stream: true }));
 })
 
 // 默认任务

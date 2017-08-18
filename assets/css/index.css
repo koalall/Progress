@@ -1,10 +1,253 @@
 .container {
   width: 100%;
-  height: 100%;
+  height: 1000px;
 }
 
 header {
+  position: relative;
   width: 100%;
   height: 98px;
   background: #000;
+}
+
+header > span {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 3px;
+  background: url("../image/horizontal-sprite.png") repeat-x 0px -33px;
+}
+
+header .banner {
+  position: relative;
+  width: 994px;
+  height: 98px;
+  margin: 0px auto;
+}
+
+header .banner .logo {
+  position: absolute;
+  left: 0px;
+  bottom: 4px;
+  width: 184px;
+  height: 56px;
+  border: solid 13px #000;
+  border-width: 13px 25px;
+}
+
+header .banner .logo img {
+  width: 184px;
+  height: 56px;
+}
+
+header .banner nav {
+  position: absolute;
+  left: 235px;
+  bottom: 0px;
+  width: 420px;
+  height: 50px;
+}
+
+header .banner nav ul {
+  width: 100%;
+  height: 100%;
+}
+
+header .banner nav ul li {
+  position: relative;
+  float: left;
+  height: 50px;
+}
+
+header .banner nav ul li a {
+  font-size: 15px;
+  color: #BEBEBE;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 0 12px 0 12px;
+}
+
+header .banner nav ul li a span {
+  padding-right: 10px;
+  background: transparent url("../image/down.png") no-repeat right center;
+}
+
+header .banner nav ul li > span {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 4px;
+}
+
+header .banner nav ul li:hover a {
+  transition: all ease 1s;
+  color: #C3A07D;
+}
+
+header .banner nav ul li:hover > span {
+  transition: background ease 0.5s;
+  background: url("../image/horizontal-sprite.png") 0px -33px;
+}
+
+header .banner nav ul li .shu {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+header .banner nav ul li:last-child a > span {
+  padding: 0px 3px;
+  padding-left: 27px;
+  background: transparent url("../image/key.png") no-repeat left center;
+}
+
+header .banner nav .dian {
+  position: absolute;
+  width: 1px;
+  height: 32px;
+  background: url("../image/shu.png") repeat-y -4px 0px;
+}
+
+header .custom {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  height: 26px;
+}
+
+header .custom > div {
+  float: left;
+  height: 26px;
+  border: 1px dotted #555;
+  background: #1C1C1C;
+}
+
+header .custom .search {
+  position: relative;
+  width: 200px;
+}
+
+header .custom .search input {
+  position: absolute;
+  top: 1px;
+  left: 4px;
+  width: 170px;
+  height: 24px;
+  line-height: 17px;
+  outline: none;
+  border: none;
+  background: transparent;
+  color: #aaa;
+}
+
+header .custom .search button {
+  position: absolute;
+  top: 1px;
+  left: 175px;
+  outline: none;
+  border: none;
+  width: 22px;
+  height: 24px;
+  background: url("../image/sprite.png") no-repeat -238px 0;
+}
+
+header .custom .language {
+  overflow: hidden;
+  width: 145px;
+  margin-left: 10px;
+}
+
+header .custom .language > div {
+  height: 100%;
+  line-height: 26px;
+  padding-left: 45px;
+  color: #aaa;
+  font-size: 11px;
+  background: url("../image/sprite.png") no-repeat -262px 2px;
+}
+
+header .custom .language a {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 26px;
+  height: 26px;
+  background: transparent url("../image/down.png") no-repeat center center;
+}
+
+header .pro {
+  position: absolute;
+  left: 0px;
+  top: 98px;
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+header .pro > div {
+  width: 994px;
+  height: 530px;
+  padding: 55px 0 30px 0;
+  margin: auto;
+}
+
+header .pro > div nav {
+  float: left;
+  width: 645px;
+  height: 530px;
+}
+
+header .pro > div nav > a {
+  float: left;
+  width: 120px;
+  height: 256px;
+  margin: 0 8px 5px 0;
+}
+
+header .pro > div nav > a img {
+  width: 110px;
+  height: 186px;
+  margin: 0 5px;
+}
+
+header .pro > div nav > a i {
+  display: block;
+  width: 83px;
+  height: 11px;
+  background: url("../image/horizontal-sprite-lifting.png") center 2px;
+  margin: 7px auto 10px;
+}
+
+header .pro > div nav > a p {
+  width: 98px;
+  padding: 0px 11px;
+  font-family: 'helveticaneue_condensedbold', 'Helvetica', 'Tahoma', 'Geneva', 'Arial', sans-serif;
+  font-size: 12px;
+  color: black;
+  line-height: 16px;
+  text-align: center;
+}
+
+header .pro > div nav:hover a {
+  opacity: 0.8;
+}
+
+header .pro > div nav:hover a:hover {
+  opacity: 1;
+}
+
+header .pro > div aside {
+  float: right;
+  width: 295px;
+  height: 530px;
+  background: blue;
+}
+
+header .pro > div aside .rt {
+  width: 255px;
+  height: 200px;
+  margin: 0 auto;
+  background: red;
 }
