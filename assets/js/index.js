@@ -3,7 +3,6 @@ $(function() {
         var index = $(this).index();
         $('.list >div').css('display', 'none');
         $('.list .list' + index).css('display', 'block');
-
     });
     $('.list >div').mouseleave(function() {
         $('.list >div').css('display', 'none');
@@ -17,32 +16,47 @@ $(function() {
         run = setInterval(function() {
             i++;
             move();
-        }, 5000);
+        }, 8000);
     }
 
     function move() {
         if (i == $('.desc>div').length) {
             i = 0;
         }
-        $('.desc>div').fadeOut("slow").eq(i).fadeIn();
-        $('.big>img').fadeOut("slow").eq(i).fadeIn();
-
+        $('.desc>div').hide();
+        $('.desc>div i').css({ width: '0%' });
+        $('.desc>div h1').css({ opacity: 0, 'line-height': 0 });
+        $('.desc>div p').css({ opacity: 0, height: 0 });
+        $('.desc>div div').css({ 'display': 'none', 'margin-top': '40px' });
+        $('.big>img').fadeOut('slow').eq(i).fadeIn(1000);
+        $('.desc>div').fadeOut("slow", function() {
+            $('.desc>div:eq(' + i + ')').fadeIn('fast', function() {
+                $('.desc>div:eq(' + i + ') i').animate({
+                    width: "100%"
+                }, 500, function() {
+                    $('.desc>div:eq(' + i + ') h1').animate({
+                        opacity: 1,
+                        'line-height': '29px'
+                    }, 500)
+                    $('.desc>div:eq(' + i + ') p').animate({
+                        opacity: 1,
+                        'height': '72px'
+                    }, 500, function() {
+                        $('.desc>div:eq(' + i + ') div').fadeIn().animate({
+                            // 'display': 'block',
+                            'margin-top': '20px'
+                        }, 'fast')
+                    })
+                });
+            });
+        })
     }
 
-    $('.shadow >div>div').eq(0).click(function() {
+    $('.shadow >div>div').click(function() {
         clearInterval(run);
-        $('.desc>div').fadeOut('slow');
-        $('.desc .tianti').fadeIn('slow');
-        $('.big img').fadeOut('slow').eq(1).fadeIn();
-        autoplay();
-
-    })
-    $('.shadow >div>div').eq(1).click(function() {
-        clearInterval(run);
-        $('.desc>div').fadeOut('slow');
-        $('.desc .check').fadeIn('slow');
-        $('.big img').fadeOut('slow').eq(0).fadeIn();
-        autoplay();
+        var index = $(this).index();
+        i = index;
+        move();
 
     })
 })

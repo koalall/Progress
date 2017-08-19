@@ -513,362 +513,92 @@ header .list3 > span {
   background: url("../image/horizontal-sprite.png") repeat-x 0px -33px;
 }
 
-section .big {
+section div {
   width: 100%;
-  height: 600px;
-  position: relative;
-  background: black;
 }
 
-section .big img {
-  position: absolute;
-  right: -45px;
-  width: 1440px;
-  height: 600px;
-}
-
-section .big img:first-child {
-  display: none;
-}
-
-section .big .desc > div {
-  position: absolute;
-  z-index: 90;
-  top: 26%;
-  right: 10%;
-  width: 400px;
-  font-style: italic;
+section div .list-big {
+  background: url("../image/backimage.scale.1920.684.1496908742541.jpeg") center;
+  background-size: cover;
   text-align: center;
 }
 
-section .big .desc > div i {
-  display: block;
-  height: 11px;
-  margin: 8px auto;
-  background: url("../image/horizontal-sprite.png") no-repeat center -20px;
+section div .list-big img {
+  width: 740px;
+  height: 530px;
+  margin: -380px auto;
 }
 
-section .big .desc > div h1 {
-  padding: 13px 0 0 0;
-  width: 400px;
-  color: #C3A07D;
-  font-size: 33px;
-  line-height: 29px;
-}
-
-section .big .desc > div p {
-  margin: 5px 0 0 0;
-  padding: 0 0 28px;
-  height: 72px;
-  font-size: 20px;
-  color: #BEBEBE;
-  line-height: 18px;
-  text-align: center;
-}
-
-section .big .desc > div div {
-  width: 36px;
-  height: 22px;
-  background: rgba(0, 0, 0, 0.5);
-  border: 1px #554728 dotted;
-  padding: 10px 25px;
-  color: #c3a07d;
-  font-size: 17px;
-  font-style: normal;
-  margin: 20px auto 0;
-  transition: all 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-
-section .big .desc > div div:hover {
-  background: #c3a07d;
-  border-color: #ab6622;
-  color: #000;
-}
-
-section .big .tianti {
-  display: none;
-  left: 10%;
-}
-
-section .big .check {
-  top: 23%;
-  right: 10%;
-}
-
-section .big .shadow {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 58px;
-  background: url("../image/blacktransp.png");
-}
-
-section .big .shadow > div {
-  width: 994px;
-  height: 36px;
+section div .list-big div {
+  width: 500px;
+  height: 134px;
+  padding: 60px 0 30px;
   margin: auto;
-}
-
-section .big .shadow > div div {
-  float: left;
-  width: 472px;
-  height: 16px;
-  padding-top: 20px;
-  margin-left: 5px;
-}
-
-section .big .shadow > div div i {
-  position: absolute;
-  top: 10px;
-  display: block;
-  width: 472px;
-  height: 3px;
-  background: url("../image/horizontal-sprite.png") no-repeat 0 -55px;
-}
-
-section .big .shadow > div div p {
-  font-size: 12px;
-  line-height: 16px;
+  margin-top: 240px;
   text-align: center;
-  color: #6e5e4f;
+  font-style: italic;
 }
 
-section .big .shadow > div div:hover i {
-  background: url("../image/horizontal-sprite.png") no-repeat 0 -33px;
-}
-
-section .big .shadow > div div:hover p {
+section div .list-big div h1 {
+  font-size: 30px;
   color: #c3a07d;
+  margin: 16px auto;
 }
 
-section .home {
-  width: 100%;
-  height: 653px;
-  padding: 5px 0 0 20px;
-  background: url("../image/collections_bg.jpg");
-}
-
-section .home > div {
-  width: 994px;
-  margin: 0 auto;
-}
-
-section .home > div .shop {
-  width: 100%;
-  height: 87px;
-  padding: 30px 0 40px;
-  margin: 0 0 44px 0;
-}
-
-section .home > div .shop i {
-  display: block;
-  width: 347px;
-  height: 11px;
-  background: url("../image/horizontal-sprite.png") no-repeat center -20px;
-  margin: 8px auto;
-}
-
-section .home > div .shop h2 {
-  width: 450px;
-  color: #C3A07D;
-  margin: 0 auto;
-  font-size: 33px;
-  line-height: 29px;
-  text-align: center;
-  font-style: italic;
-}
-
-section .home > div .address {
-  width: 100%;
-  height: 414px;
-}
-
-section .home > div .address a {
-  position: relative;
-  float: left;
-  display: block;
-  width: 320px;
-  height: 403px;
-  color: #c3a07d;
-  text-align: center;
-}
-
-section .home > div .address a:first-child {
-  background: url("../image/image.png");
-  margin: 0 0 9px 166px;
-}
-
-section .home > div .address a:last-child {
-  margin: 0 0 9px 16px;
-  background: url("../image/image.jpeg");
-}
-
-section .home > div .address a p {
-  position: absolute;
-  bottom: 76px;
-  width: 100%;
-  line-height: 18px;
-  font-style: italic;
-  font-size: 20px;
-}
-
-section .home > div .address a div {
-  position: absolute;
-  bottom: 30px;
-  width: 100%;
-  height: 30px;
-}
-
-section .home > div .address a div span {
-  display: inline-block;
-  width: 82.4px;
-  height: 16px;
-  padding: 6px 25px;
-  border: 1px dashed #c3a07d;
-}
-
-section .home > div .address a div span:hover {
-  transition: background-color 350ms cubic-bezier(0.215, 0.61, 0.355, 1);
-  background: #c3a07d;
-  color: #000;
-}
-
-section .news {
-  width: 100%;
-  height: 654px;
-  padding: 5px 0 0 0;
-  background: #F5F5F5;
-}
-
-section .news > div {
-  width: 994px;
-  margin: 0 auto;
-}
-
-section .news > div .info .infot {
-  width: 100%;
-  height: 87px;
-  padding: 30px 0 0px;
-  margin: 0 0 26px 0;
-}
-
-section .news > div .info .infot i {
-  display: block;
-  width: 347px;
-  height: 11px;
-  background: url("../image/horizontal-sprite.png") no-repeat center -9px;
-  margin: 8px auto;
-}
-
-section .news > div .info .infot h2 {
-  width: 450px;
-  color: #C3A07D;
-  margin: 0 auto;
-  font-size: 33px;
-  line-height: 29px;
-  text-align: center;
-  font-style: italic;
-}
-
-section .news > div .info .infoc a {
-  position: relative;
-  float: left;
-  width: 239px;
-  height: 387px;
-  background: #FFF;
-  margin: 0 8px 9px 0;
-  text-align: center;
-}
-
-section .news > div .info .infoc a div {
-  position: absolute;
-  bottom: 207px;
-  left: 23%;
-  padding: 0 25px;
-  height: 25px;
+section div .list-big div p {
+  width: 390px;
+  color: #696969;
   font-size: 14px;
+  line-height: 21px;
+  padding: 1px 0 0 0;
+  margin: 0 auto;
+  letter-spacing: 1px;
+}
+
+section div .list-s {
+  background: url("../image/backimage.scale.1280.300.1496908742552.jpeg");
+  background-size: cover;
+  height: 300px;
   font-style: italic;
-  line-height: 26px;
-  color: #0e0e0d;
-  background: url("../image/cta-date-shade_bg.png") center bottom;
-  background-color: #c1baac;
+  text-align: center;
+  vertical-align: middle;
 }
 
-section .news > div .info .infoc a h3 {
-  width: 197px;
-  padding: 11px 10px 0;
-  margin: 0px auto;
-  line-height: 17px;
-  font-size: 17px;
-  font-style: italic;
-  letter-spacing: -1;
-  color: #999;
+section div .list-s div {
+  padding-top: 78px;
 }
 
-section .news > div .info .infoc a i {
-  position: absolute;
-  top: 269px;
-  left: 14px;
+section div .list-s div h2 {
+  color: #c3a07d;
+  font-size: 30px;
+  line-height: 33px;
+  margin: 15px auto;
+}
+
+section div .list-s div p {
+  margin: 15px auto;
+  line-height: 20px;
+  font-size: 18px;
+  color: #BEBEBE;
+}
+
+section div .list-s div a {
   display: block;
-  width: 210px;
-  height: 11px;
-  background: url("../image/horizontal-sprite.png") no-repeat center -9px;
-  margin: auto;
-}
-
-section .news > div .info .infoc a p {
-  position: absolute;
-  top: 285px;
-  left: 10px;
-  width: 219px;
-  height: 45px;
-  font-size: 11px;
-  line-height: 16px;
-  color: #262522;
-}
-
-section .news > div .info .infoc a span {
-  display: block;
-  position: absolute;
-  bottom: 20px;
-  left: 70px;
-  padding: 6px 25px;
-  width: 44px;
-  height: 18px;
-  border: 1px dotted #554728;
-  color: #999;
-  font-size: 12px;
-}
-
-section .news > div .info .infoc a span:hover {
-  transition: background-color 350ms cubic-bezier(0.215, 0.61, 0.355, 1);
-  background: rgba(85, 71, 40, 0.1);
-}
-
-section .news > div .info .infoc a:hover {
-  transition: background-color 350ms cubic-bezier(0.215, 0.61, 0.355, 1);
-  background: #EDEDED;
-}
-
-section .news > div > a {
-  position: relative;
-  top: 20px;
-  left: 43%;
-  width: 96px;
+  width: 24px;
   height: 16px;
   padding: 6px 25px;
-  font-size: 12px;
-  color: #999;
   border: 1px dotted #554728;
+  margin: 30px auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+  font-style: normal;
+  color: #c3a07d;
 }
 
-section .news > div > a::before {
-  clear: both;
-}
-
-section .news > div > a:hover {
+section div .list-s div a:hover {
   transition: background-color 350ms cubic-bezier(0.215, 0.61, 0.355, 1);
-  background: rgba(85, 71, 40, 0.1);
+  background: #c3a07d;
+  color: #000;
 }
 
 footer {
