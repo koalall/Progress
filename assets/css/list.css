@@ -1,3 +1,7 @@
+body {
+  background: #F4F4F4;
+}
+
 .container {
   width: 100%;
   overflow: hidden;
@@ -601,7 +605,220 @@ section div .list-s div a:hover {
   color: #000;
 }
 
+section div .list-show .choose {
+  background: #EDEDED;
+}
+
+section div .list-show .choose div {
+  width: 994px;
+  height: 131px;
+  margin: auto;
+  text-align: center;
+}
+
+section div .list-show .choose div h2 {
+  width: 215px;
+  height: 18px;
+  color: #c3a07d;
+  padding-top: 32px;
+  margin: 0px auto 16px;
+  font-size: 21px;
+  font-style: italic;
+}
+
+section div .list-show .choose div i {
+  display: block;
+  width: 60px;
+  height: 11px;
+  background: url("../image/horizontal-sprite-lifting.png") center 2px;
+  margin: 0 auto 16px;
+}
+
+section div .list-show .choose div ul {
+  width: 60%;
+  margin: auto;
+}
+
+section div .list-show .choose div ul li {
+  float: left;
+  padding-left: 15px;
+  font-size: 10px;
+  color: #363636;
+  text-align: center;
+  cursor: pointer;
+}
+
+section div .list-show .choose div ul li span {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border: dotted 1px #c3a07d;
+  margin-right: 6px;
+  line-height: 9px;
+  text-align: center;
+  background: url("../image/sprite1.png");
+}
+
+section div .list-show .choose div ul li span input {
+  width: 9px;
+  height: 9px;
+  outline: none;
+  border: none;
+  margin: 0;
+  opacity: 0;
+}
+
+section div .list-show .choose div ul li:last-child a {
+  color: #363636;
+}
+
+section div .list-show .choose div ul li:last-child span {
+  width: 13px;
+  height: 13px;
+  border: none;
+  background: url("../image/checkerplus.png") no-repeat;
+}
+
+section div .list-show .show {
+  width: 994px;
+  margin: 0 auto;
+  padding: 60px 0 60px;
+}
+
+section div .list-show .show .showbig {
+  float: left;
+  width: 392px;
+}
+
+section div .list-show .show .showbig div {
+  position: relative;
+  height: 801px;
+  text-align: center;
+}
+
+section div .list-show .show .showbig div ul li {
+  display: inline-block;
+  width: 100%;
+}
+
+section div .list-show .show .showbig div ul li img {
+  display: block;
+  margin: auto;
+}
+
+section div .list-show .show .showbig div ul li img:last-child {
+  position: absolute;
+  top: 480px;
+  left: 304px;
+}
+
+section div .list-show .show .showbig div ol {
+  position: absolute;
+  top: 575px;
+  width: 100%;
+  text-align: center;
+}
+
+section div .list-show .show .showbig div ol li {
+  display: inline-block;
+  width: 9px;
+  height: 8px;
+  margin-right: 5px;
+  background: url("../image/highlight-radio.png");
+  border-radius: 50%;
+}
+
+section div .list-show .show .showbig div ol .active {
+  background: url("../image/highlight-radio_active.png");
+}
+
+section div .list-show .show .showbig div h2 {
+  width: 330px;
+  margin: auto;
+  padding: 19px 0 3px 0;
+  color: #696969;
+  font-size: 21px;
+  font-style: italic;
+}
+
+section div .list-show .show .showbig div p {
+  width: 370px;
+  margin-top: 8px;
+  padding: 0 11px;
+  color: #999;
+  font-size: 11px;
+}
+
+section div .list-show .show .showbig div span {
+  display: block;
+  border: 1px dotted #c3a07d;
+  width: 25px;
+  padding: 12px 22px;
+  background: #FFF;
+  margin: 17px auto 0;
+  color: #c3a07d;
+  font-size: 12px;
+}
+
+section div .list-show .show .showsmall {
+  position: relative;
+  float: left;
+  width: 185px;
+  height: 403px;
+  margin: 11px 0 0 10px;
+  text-align: center;
+}
+
+section div .list-show .show .showsmall img {
+  display: block;
+  margin: auto;
+}
+
+section div .list-show .show .showsmall img:nth-child(2) {
+  position: absolute;
+  top: 198px;
+  left: 135px;
+}
+
+section div .list-show .show .showsmall i {
+  display: block;
+  width: 60px;
+  height: 11px;
+  margin: 10px auto 16px;
+  background: url("../image/horizontal-sprite-lifting.png") center 2px;
+}
+
+section div .list-show .show .showsmall h2 {
+  width: 150px;
+  line-height: 15px;
+  color: #696969;
+  font-size: 15px;
+  margin: auto;
+}
+
+section div .list-show .show .showsmall p {
+  width: 185px;
+  height: 14px;
+  margin: 8px auto 0;
+  font-size: 11px;
+  color: #999;
+  line-height: 14px;
+}
+
+section div .list-show .show .showsmall span {
+  display: block;
+  border: 1px dotted #c3a07d;
+  width: 25px;
+  padding: 4px 20px;
+  background: #FFF;
+  margin: 10px auto 10px;
+  color: #c3a07d;
+  font-size: 12px;
+  line-height: 14px;
+}
+
 footer {
+  clear: both;
   width: 100%;
   height: 721px;
   background: #141414;

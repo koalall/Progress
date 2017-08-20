@@ -1,4 +1,6 @@
 $(function() {
+
+    //  公共部分 头部开始 
     $('header>.banner> nav>ul>li').mousemove(function() {
         var index = $(this).index();
         $('.list >div').css('display', 'none');
@@ -8,6 +10,9 @@ $(function() {
         $('.list >div').css('display', 'none');
     });
 
+    //  公共部分 头部结束
+
+    // index 轮播动画开始
     var run = null;
     autoplay();
     var i = 1;
@@ -57,6 +62,47 @@ $(function() {
         var index = $(this).index();
         i = index;
         move();
-
     })
+    // index 轮播动画结束
+
+    // list 点击 筛选 多选框效果
+
+    $('.list-show .choose li').click(function() {
+        var index = $(this).index();
+        if ($(this).find('span input').prop('checked')) {
+            $('.list-show .choose  li').not(this).find(' span input').prop({ checked: false });
+            $('.list-show .choose  li').not(this).find(' span').css('background-position', '0 0');
+            $(this).find('span').css('background-position', '-36px -320px');
+            console.log(index);
+        } else {
+            $('.list-show .choose li span').css('background-position', '0 0');
+        }
+    })
+
+    $.getJSON('assets/js/list.json', function(data) {
+        var $jsontip = $("#jsontip");
+        var strHtml = "123"; //存储数据的变量 
+        $jsontip.empty(); //清空内容 
+        $.each(data, function(key, value) {
+            console.log(`$ { value.img }`);
+            var img = value.img;
+
+            strHtml += `<li class="showsmall">
+                                <a href="">
+                                    <div>
+                                        <img src="assets/image/watch/image.scale.161.263.1489408770449.png">
+                                        <img src="assets/image/watch/result-picto_poincon.png">
+                                        <div>
+                                            <i></i>
+                                            <h2>PATRIMONY传承系列1731超薄机芯</h2>
+                                            <p>{ 30110/000P-B089 }</p>
+                                            <span>探索</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>`;
+        })
+        $jsontip.html(strHtml); //显示处理后的数据 
+    })
+
 })
