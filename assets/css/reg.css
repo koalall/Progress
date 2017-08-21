@@ -1,0 +1,537 @@
+.container {
+  width: 100%;
+  overflow: hidden;
+  background: black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+header {
+  position: relative;
+  width: 100%;
+}
+
+header > span {
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 3px;
+  background: url("../image/horizontal-sprite.png") repeat-x 0px -33px;
+}
+
+header > div {
+  position: relative;
+  width: 980px;
+  height: 100px;
+  padding: 5px 0 20px;
+  margin: 0 auto;
+}
+
+header > div img {
+  width: 241px;
+  height: 82px;
+  padding: 13px 0 0;
+}
+
+header > div .login-language {
+  position: absolute;
+  top: 24px;
+  right: 0;
+  width: 145px;
+  height: 24px;
+  padding-top: 1px;
+  border: 1px dotted #3B3A3A;
+  background: #1C1C1C;
+  font-size: 11px;
+  text-align: left;
+  line-height: 22px;
+}
+
+header > div .login-language i {
+  display: block;
+  float: left;
+  width: 35px;
+  height: 22px;
+  margin: 0 8px 0;
+  background: url("../image/spritesheet.png") 0 -33px;
+}
+
+header > div .login-language span {
+  display: block;
+  float: left;
+  line-height: 22px;
+  text-align: center;
+  color: #aaa;
+}
+
+header > div .login-language > a {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 26px;
+  height: 26px;
+  background: transparent url("../image/down.png") no-repeat center center;
+}
+
+header > div .login-language ul {
+  display: none;
+  position: absolute;
+  top: 26px;
+  left: -1px;
+  width: 145px;
+}
+
+header > div .login-language ul li {
+  width: 145px;
+  height: 34px;
+  border: 1px dotted #3B3A3A;
+  border-top: none;
+  background: #1C1C1C;
+}
+
+header > div .login-language ul li a {
+  clear: both;
+  width: 121px;
+  height: 17px;
+  padding: 8px 12px;
+  color: #aaa;
+}
+
+header > div .login-language ul li:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+header > div .login-language ul li:hover a {
+  color: #FFF;
+}
+
+section {
+  background: url("../image/body_bg.png") repeat 50% 50%;
+}
+
+section > div {
+  width: 980px;
+  height: 1223px;
+  padding: 40px 0;
+  margin: 0 auto;
+}
+
+section > div aside {
+  float: left;
+  width: 31%;
+}
+
+section > div aside h2 {
+  height: 13px;
+  margin-bottom: 7px;
+  font-family: 'HelveticaNeueLTStd-MdCn';
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #554627;
+}
+
+section > div aside h1 {
+  position: relative;
+  height: 28px;
+  padding-bottom: 30px;
+  margin-bottom: 17px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 32px;
+  letter-spacing: -1px;
+  color: black;
+}
+
+section > div aside h1::after {
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  width: 34px;
+  height: 2px;
+  content: '';
+  background-color: black;
+}
+
+section > div aside h6 {
+  height: 19px;
+  margin: 19px 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
+  font-style: italic;
+  color: #554728;
+}
+
+section > div .content {
+  float: right;
+  width: 607px;
+  height: 1192px;
+  padding: 16px 14px 15px 16px;
+  background: rgba(145, 103, 38, 0.2);
+}
+
+section > div .content > div {
+  width: 567px;
+  height: 1145px;
+  padding: 20px;
+  background: #FFF;
+}
+
+section > div .content > div h5 {
+  height: 16px;
+  margin: 10px 0;
+  font-family: 'Tahoma', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: #554728;
+}
+
+section > div .content > div .bulid {
+  width: 577px;
+  height: 227px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #dcd9d2;
+}
+
+section > div .content > div .bulid div {
+  float: left;
+  width: 278px;
+  height: 61px;
+  margin: 0 10px 7px 0;
+}
+
+section > div .content > div .bulid div h2 {
+  height: 16px;
+  padding-top: 7px;
+  margin-bottom: 5px;
+  font-family: 'Tahoma', sans-serif;
+  font-size: 11px;
+  color: #262521;
+  font-weight: bold;
+}
+
+section > div .content > div .bulid div h2 span {
+  display: inline-block;
+  color: #846e3f;
+}
+
+section > div .content > div .bulid div input {
+  width: 252px;
+  height: 19px;
+  padding: 6px 12px;
+  border: 1px dotted #8e836f;
+  background: #F5F5F3;
+  font-family: sans-serif;
+  font-size: 12px;
+  color: #222;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+section > div .content > div .bulid div:nth-child(2) {
+  clear: both;
+}
+
+section > div .content > div .bulid p {
+  clear: both;
+  font-family: 'Tahoma', sans-serif;
+  font-size: 11px;
+  color: #262521;
+  height: 16px;
+  margin: 0 0 5px 0;
+}
+
+section > div .content > div .base {
+  width: 577px;
+  height: 742px;
+  padding: 25px 0;
+  border-bottom: 1px solid #dcd9d2;
+}
+
+section > div .content > div .base div {
+  float: left;
+  width: 278px;
+  height: 61px;
+  margin: 0 10px 7px 0;
+}
+
+section > div .content > div .base div h2 {
+  height: 16px;
+  padding-top: 7px;
+  margin-bottom: 5px;
+  font-family: 'Tahoma', sans-serif;
+  font-size: 11px;
+  color: #262521;
+  font-weight: bold;
+}
+
+section > div .content > div .base div h2 span {
+  display: inline-block;
+  color: #846e3f;
+}
+
+section > div .content > div .base div input {
+  width: 252px;
+  height: 19px;
+  padding: 6px 12px;
+  border: 1px dotted #8e836f;
+  background: #F5F5F3;
+  font-family: sans-serif;
+  font-size: 12px;
+  color: #222;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+section > div .content > div .base div:nth-child(4) {
+  height: 143px;
+}
+
+section > div .content > div .base div:nth-child(4) textarea {
+  width: 252px;
+  padding: 6px 12px;
+  height: 91px;
+  border: 1px dotted #8e836f;
+  background: #F5F5F3;
+  font-family: sans-serif;
+  font-size: 12px;
+  color: #222;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+section > div .content > div .base div select {
+  width: 252px;
+  padding: 6px 12px;
+  height: 105px;
+  border: 1px dotted #8e836f;
+  background: #F5F5F3;
+  font-family: sans-serif;
+  font-size: 12px;
+  color: #222;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+section > div .content > div .base div:first-child {
+  height: 46px;
+  font-family: 'Tahoma', sans-serif;
+  font-size: 11px;
+  color: #262521;
+}
+
+section > div .content > div .base div:first-child input {
+  line-height: 16px;
+  text-align: center;
+  width: 13px;
+  height: 13px;
+  margin-left: 0px;
+}
+
+section > div .content > div .base div:nth-child(2), section > div .content > div .base div:nth-child(7), section > div .content > div .base div:nth-child(10), section > div .content > div .base div:nth-child(13) {
+  clear: both;
+}
+
+section > div .content > div .base div:nth-child(2), section > div .content > div .base div:nth-child(3), section > div .content > div .base div:nth-child(4), section > div .content > div .base div:nth-child(9) {
+  padding-bottom: 25px;
+}
+
+section > div .content > div .base div:nth-child(6) {
+  float: right;
+  padding-bottom: 25px;
+}
+
+section > div .content > div .base div:nth-child(12) {
+  padding: 25px 0 25px;
+}
+
+section > div .content > div .base div:nth-child(13) {
+  width: 100%;
+  height: 16px;
+}
+
+section > div .content > div .base div:nth-child(13) .ad {
+  float: left;
+  width: auto;
+  height: 21px;
+  margin-right: 10px;
+  font-family: 'Tahoma', sans-serif;
+  font-size: 11px;
+}
+
+section > div .content > div .base div:nth-child(13) .ad i {
+  display: block;
+  float: left;
+  width: 11px;
+  height: 11px;
+  border: 1px dotted #554627;
+  margin-right: 4px;
+  background: url("../image/sprite1.png");
+}
+
+section > div .content > div .base div:nth-child(13) .ad i input {
+  display: block;
+  width: 11px;
+  height: 11px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  opacity: 0;
+}
+
+section > div .content > div .base p {
+  clear: both;
+  line-height: 16px;
+  font-family: 'Tahoma', sans-serif;
+  font-size: 11px;
+  color: #262521;
+  padding-bottom: 25px;
+}
+
+section > div .content > div button {
+  width: 100px;
+  height: 33px;
+  margin: 20px 0 0 0;
+  padding: 0 15px;
+  background: black;
+  color: #9C9C9C;
+  outline: none;
+  border: none;
+  font-family: 'HelveticaNeueLTStd-MdCn';
+  font-size: 13px;
+  text-align: center;
+}
+
+section > div .content > div button:hover {
+  cursor: pointer;
+  transition: all .1s ease-in-out;
+  background: #554627;
+  color: #FFF;
+}
+
+footer {
+  font-family: 'Tahoma', sans-serif;
+}
+
+footer > div:first-child {
+  background: #141414;
+  color: #c6beb7;
+}
+
+footer > div:first-child ul {
+  width: 980px;
+  height: 249px;
+  padding: 45px 0;
+  margin: 0 auto;
+}
+
+footer > div:first-child ul li {
+  float: left;
+  width: 160px;
+  margin-right: 36px;
+}
+
+footer > div:first-child ul li h2 {
+  height: 13px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+footer > div:first-child ul li i {
+  height: 3px;
+  display: block;
+  margin-bottom: 17px;
+  background: url("../image/spritesheet-horiz.png");
+}
+
+footer > div:first-child ul li h5 {
+  line-height: 16px;
+  margin: 8px 0 0;
+  font-size: 13px;
+}
+
+footer > div:first-child ul li > span {
+  display: inline-block;
+  margin: 12px 0 0;
+  font-size: 11px;
+  line-height: 16px;
+  color: #a6a6a6;
+}
+
+footer > div:first-child ul li div {
+  height: 30px;
+  margin-bottom: 5px;
+}
+
+footer > div:first-child ul li div a {
+  line-height: 26px;
+  font-size: 11px;
+  color: #a6a6a6;
+}
+
+footer > div:first-child ul li div span {
+  display: block;
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  background: url("../image/spritesheet.png");
+  background-color: #282828;
+}
+
+footer > div:first-child ul li div:first-of-type span {
+  background-position: -1px -82px;
+}
+
+footer > div:first-child ul li div:first-of-type span:hover {
+  background-position: -1px -113px;
+  background-color: #3b559f;
+}
+
+footer > div:first-child ul li div:nth-of-type(2) span {
+  background-position: -33px -82px;
+}
+
+footer > div:first-child ul li div:nth-of-type(2) span:hover {
+  background-position: -33px -113px;
+  background-color: #00aced;
+}
+
+footer > div:first-child ul li div:nth-of-type(3) span {
+  background-position: -65px -82px;
+}
+
+footer > div:first-child ul li div:nth-of-type(3) span:hover {
+  background-position: -65px -113px;
+  background-color: #FFF;
+}
+
+footer > div:first-child ul li div:last-of-type span {
+  background-position: -64px -141px;
+}
+
+footer > div:first-child ul li div:last-of-type span:hover {
+  background-position: -64px -168px;
+  background-color: #2c5c81;
+}
+
+footer > div:last-child {
+  color: #FFF;
+}
+
+footer > div:last-child div {
+  width: 980px;
+  height: 36px;
+  margin: 0 auto;
+}
+
+footer > div:last-child div p {
+  height: 16px;
+  padding: 10px 0;
+  text-align: left;
+  font-size: 11px;
+  color: #a6a6a6;
+}
+
+footer > div:last-child div p a {
+  color: #a6a6a6;
+  text-decoration: underline;
+}

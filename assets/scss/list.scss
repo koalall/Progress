@@ -1,10 +1,7 @@
-body {
-    background: #F4F4F4;
-}
-
 .container {
     width: 100%;
-    overflow: hidden; // font-family: 'Georgia', 'serif';
+    overflow: hidden;
+    background: #F4F4F4;
 }
 
 header {
@@ -665,23 +662,26 @@ section {
 
             .show {
                 width: 994px;
+                height: 3776px;
                 margin: 0 auto;
-                padding: 60px 0 60px;
+                padding: 40px 0 60px;
 
                 .showbig {
                     float: left;
                     width: 392px;
+                    overflow: hidden;
 
-                    div {
+                    .pic {
                         position: relative;
                         height: 801px;
                         text-align: center;
 
                         ul {
-
                             li {
+                                position: absolute;
+                                left: 0px;
                                 display: inline-block;
-                                width: 100%;
+                                width: 392px;
 
                                 img {
                                     display: block;
@@ -692,6 +692,9 @@ section {
                                     top: 480px;
                                     left: 304px;
                                 }
+                            }
+                            li:last-child {
+                                display: none;
                             }
                         }
 
@@ -714,32 +717,38 @@ section {
                             }
                         }
 
-                        h2 {
-                            width: 330px;
-                            margin: auto;
-                            padding: 19px 0 3px 0;
-                            color: #696969;
-                            font-size: 21px;
-                            font-style: italic;
-                        }
+                        div {
+                            position: absolute;
+                            top: 621px;
 
-                        p {
-                            width: 370px;
-                            margin-top: 8px;
-                            padding: 0 11px;
-                            color: #999;
-                            font-size: 11px;
-                        }
+                            h2 {
+                                width: 330px;
+                                margin: auto;
+                                padding: 19px 0 3px 0;
+                                color: #696969;
+                                font-size: 21px;
+                                font-style: italic;
+                                font-family: Georgia, "Times New Roman", Times, serif;
+                            }
 
-                        span {
-                            display: block;
-                            border: 1px dotted #c3a07d;
-                            width: 25px;
-                            padding: 12px 22px;
-                            background: #FFF;
-                            margin: 17px auto 0;
-                            color: #c3a07d;
-                            font-size: 12px;
+                            p {
+                                width: 370px;
+                                margin-top: 8px;
+                                padding: 0 11px;
+                                color: #999;
+                                font-size: 11px;
+                            }
+
+                            span {
+                                display: block;
+                                border: 1px dotted #c3a07d;
+                                width: 25px;
+                                padding: 12px 22px;
+                                background: #FFF;
+                                margin: 17px auto 0;
+                                color: #c3a07d;
+                                font-size: 12px;
+                            }
                         }
                     }
                 }
@@ -751,7 +760,9 @@ section {
                     height: 403px;
                     margin: 11px 0 0 10px;
                     text-align: center;
-
+                    div {
+                        height: 350px;
+                    }
                     img {
                         display: block;
                         margin: auto;
@@ -776,6 +787,7 @@ section {
                         color: #696969;
                         font-size: 15px;
                         margin: auto;
+                        font-family: Georgia, "Times New Roman", Times, serif;
                     }
 
                     p {
@@ -796,13 +808,31 @@ section {
                         margin: 10px auto 10px;
                         color: #c3a07d;
                         font-size: 12px;
-                        line-height: 14px
+                        line-height: 14px;
+                        opacity: 0;
+                    }
+
+                    &:hover {
+                        div {
+                            transition: all ease 0.5s;
+                            background: url("../image/item-bg.png");
+                            height: 403px;
+
+                            span {
+                                transition: all ease 1s;
+                                opacity: 1;
+                            }
+                        }
                     }
                 }
             }
         }
     }
 }
+
+
+
+
 
 footer {
     clear: both;

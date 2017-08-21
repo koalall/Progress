@@ -12,6 +12,9 @@ $(function() {
 
     //  公共部分 头部结束
 
+
+    // ==============================     index     start      =============================
+
     // index 轮播动画开始
     var run = null;
     autoplay();
@@ -63,46 +66,113 @@ $(function() {
         i = index;
         move();
     })
-    // index 轮播动画结束
+    // ==============================     index     end       =============================
 
-    // list 点击 筛选 多选框效果
+
+    // ==============================     list     start      =============================
+
+    // list 点击 筛选 多选框效果 开始
 
     $('.list-show .choose li').click(function() {
         var index = $(this).index();
         if ($(this).find('span input').prop('checked')) {
-            $('.list-show .choose  li').not(this).find(' span input').prop({ checked: false });
-            $('.list-show .choose  li').not(this).find(' span').css('background-position', '0 0');
+            $('.list-show .choose  li').not(this).find('span input').prop({ checked: false });
+            $('.list-show .choose  li').not(this).find('span').css('background-position', '0 0');
             $(this).find('span').css('background-position', '-36px -320px');
-            console.log(index);
         } else {
             $('.list-show .choose li span').css('background-position', '0 0');
         }
     })
 
-    $.getJSON('assets/js/list.json', function(data) {
-        var $jsontip = $("#jsontip");
-        var strHtml = "123"; //存储数据的变量 
-        $jsontip.empty(); //清空内容 
-        $.each(data, function(key, value) {
-            console.log(`$ { value.img }`);
-            var img = value.img;
+    //  大图展示 开始
+    showautoplay();
+    var j = 0;
 
-            strHtml += `<li class="showsmall">
+    function showautoplay() {
+        setInterval(function() {
+            j++;
+            showmove();
+        }, 4000);
+    }
+
+    function showmove() {
+        if (j == $('.list-show .pic ul li').length) {
+            j = 0;
+        }
+        $('.list-show .pic ul li').fadeOut('slow').eq(j).slideDown(1500);
+        $('.list-show .pic ol li').removeClass().eq(j).addClass('active');
+        $('.list-show .pic div').fadeOut().fadeIn();
+    }
+
+    // 获取json文件 读取到页面
+    loadInfo();
+
+    function loadInfo() {
+        $.getJSON('assets/js/list.json', function(data) {
+            var jsontip = $("#jsontip");
+            var strHtml = "";
+            $.each(data, function(key, value) {
+                strHtml += `<li class="showsmall">
                                 <a href="">
                                     <div>
-                                        <img src="assets/image/watch/image.scale.161.263.1489408770449.png">
+                                        <img src="${value.img}">
                                         <img src="assets/image/watch/result-picto_poincon.png">
-                                        <div>
                                             <i></i>
-                                            <h2>PATRIMONY传承系列1731超薄机芯</h2>
-                                            <p>{ 30110/000P-B089 }</p>
+                                            <h2>${value.title}</h2>
+                                            <p>${value.data}</p>
                                             <span>探索</span>
-                                        </div>
                                     </div>
                                 </a>
                             </li>`;
+            })
+            jsontip.append(strHtml); //显示处理后的数据 
         })
-        $jsontip.html(strHtml); //显示处理后的数据 
+    }
+
+    // ==============================     list     end       =============================
+
+
+    // ==============================     login     start    =============================
+
+    // 语言选择
+    $('.login-language>a').click(function() {
+        if ($('.login-language>ul').css('display') == 'none') {
+
+            $('.login-language>ul').css('display', 'block');
+        } else {
+            $('.login-language>ul').css('display', 'none');
+
+        }
     })
+    $('.login-language>ul li a').click(function() {
+        $('.login-language>span').text($(this).text());
+    })
+
+    // 记住密码
+    $('.login .memr input').click(function() {
+        if ($(this).prop('checked')) {
+            $('.login .memr span').css('background-position', '-35px -319px');
+        } else {
+            $('.login .memr span').css('background-position', '0 0');
+        }
+    })
+
+    // ==============================     login     end    =============================
+
+    // ==============================     reg     start    =============================
+
+    // 同意条款
+    $('.ad input').click(function() {
+        if ($(this).prop('checked')) {
+            $(this).parent().css('background-position', '-35px -319px');
+        } else {
+            $(this).parent().css('background-position', '0 0');
+        }
+    })
+
+
+    // ==============================     reg     end    =============================
+
+
 
 })

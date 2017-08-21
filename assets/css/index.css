@@ -554,6 +554,7 @@ section .big .desc > div h1 {
   color: #C3A07D;
   font-size: 33px;
   line-height: 29px;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 section .big .desc > div p {
@@ -792,6 +793,7 @@ section .news > div .info .infoc a div {
   color: #0e0e0d;
   background: url("../image/cta-date-shade_bg.png") center bottom;
   background-color: #c1baac;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 section .news > div .info .infoc a h3 {

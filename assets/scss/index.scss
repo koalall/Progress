@@ -1,6 +1,6 @@
 .container {
     width: 100%;
-    overflow: hidden; // font-family: 'Georgia', 'serif';
+    overflow: hidden;
 }
 
 header {
@@ -537,6 +537,7 @@ section {
                     color: #C3A07D;
                     font-size: 33px;
                     line-height: 29px;
+                    font-family: Georgia, "Times New Roman", Times, serif;
                 }
 
                 p {
@@ -777,6 +778,7 @@ section {
                             color: #0e0e0d;
                             background: url('../image/cta-date-shade_bg.png') center bottom;
                             background-color: #c1baac;
+                            font-family: Georgia, "Times New Roman", Times, serif;
                         }
 
                         h3 {

@@ -1,10 +1,7 @@
-body {
-  background: #F4F4F4;
-}
-
 .container {
   width: 100%;
   overflow: hidden;
+  background: #F4F4F4;
 }
 
 header {
@@ -681,45 +678,53 @@ section div .list-show .choose div ul li:last-child span {
 
 section div .list-show .show {
   width: 994px;
+  height: 3776px;
   margin: 0 auto;
-  padding: 60px 0 60px;
+  padding: 40px 0 60px;
 }
 
 section div .list-show .show .showbig {
   float: left;
   width: 392px;
+  overflow: hidden;
 }
 
-section div .list-show .show .showbig div {
+section div .list-show .show .showbig .pic {
   position: relative;
   height: 801px;
   text-align: center;
 }
 
-section div .list-show .show .showbig div ul li {
+section div .list-show .show .showbig .pic ul li {
+  position: absolute;
+  left: 0px;
   display: inline-block;
-  width: 100%;
+  width: 392px;
 }
 
-section div .list-show .show .showbig div ul li img {
+section div .list-show .show .showbig .pic ul li img {
   display: block;
   margin: auto;
 }
 
-section div .list-show .show .showbig div ul li img:last-child {
+section div .list-show .show .showbig .pic ul li img:last-child {
   position: absolute;
   top: 480px;
   left: 304px;
 }
 
-section div .list-show .show .showbig div ol {
+section div .list-show .show .showbig .pic ul li:last-child {
+  display: none;
+}
+
+section div .list-show .show .showbig .pic ol {
   position: absolute;
   top: 575px;
   width: 100%;
   text-align: center;
 }
 
-section div .list-show .show .showbig div ol li {
+section div .list-show .show .showbig .pic ol li {
   display: inline-block;
   width: 9px;
   height: 8px;
@@ -728,20 +733,26 @@ section div .list-show .show .showbig div ol li {
   border-radius: 50%;
 }
 
-section div .list-show .show .showbig div ol .active {
+section div .list-show .show .showbig .pic ol .active {
   background: url("../image/highlight-radio_active.png");
 }
 
-section div .list-show .show .showbig div h2 {
+section div .list-show .show .showbig .pic div {
+  position: absolute;
+  top: 621px;
+}
+
+section div .list-show .show .showbig .pic div h2 {
   width: 330px;
   margin: auto;
   padding: 19px 0 3px 0;
   color: #696969;
   font-size: 21px;
   font-style: italic;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-section div .list-show .show .showbig div p {
+section div .list-show .show .showbig .pic div p {
   width: 370px;
   margin-top: 8px;
   padding: 0 11px;
@@ -749,7 +760,7 @@ section div .list-show .show .showbig div p {
   font-size: 11px;
 }
 
-section div .list-show .show .showbig div span {
+section div .list-show .show .showbig .pic div span {
   display: block;
   border: 1px dotted #c3a07d;
   width: 25px;
@@ -767,6 +778,10 @@ section div .list-show .show .showsmall {
   height: 403px;
   margin: 11px 0 0 10px;
   text-align: center;
+}
+
+section div .list-show .show .showsmall div {
+  height: 350px;
 }
 
 section div .list-show .show .showsmall img {
@@ -794,6 +809,7 @@ section div .list-show .show .showsmall h2 {
   color: #696969;
   font-size: 15px;
   margin: auto;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 section div .list-show .show .showsmall p {
@@ -815,6 +831,18 @@ section div .list-show .show .showsmall span {
   color: #c3a07d;
   font-size: 12px;
   line-height: 14px;
+  opacity: 0;
+}
+
+section div .list-show .show .showsmall:hover div {
+  transition: all ease 0.5s;
+  background: url("../image/item-bg.png");
+  height: 403px;
+}
+
+section div .list-show .show .showsmall:hover div span {
+  transition: all ease 1s;
+  opacity: 1;
 }
 
 footer {
