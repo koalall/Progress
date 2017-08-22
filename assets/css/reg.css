@@ -111,8 +111,8 @@ section {
 }
 
 section > div {
+  overflow: hidden;
   width: 980px;
-  height: 1223px;
   padding: 40px 0;
   margin: 0 auto;
 }
@@ -165,14 +165,12 @@ section > div aside h6 {
 section > div .content {
   float: right;
   width: 607px;
-  height: 1192px;
   padding: 16px 14px 15px 16px;
-  background: rgba(145, 103, 38, 0.2);
+  background: rgba(145, 103, 38, 0.1);
 }
 
 section > div .content > div {
   width: 567px;
-  height: 1145px;
   padding: 20px;
   background: #FFF;
 }
@@ -269,7 +267,9 @@ section > div .content > div .base div h2 span {
   color: #846e3f;
 }
 
-section > div .content > div .base div input {
+section > div .content > div .base div input,
+section > div .content > div .base div select,
+section > div .content > div .base div textarea {
   width: 252px;
   height: 19px;
   padding: 6px 12px;
@@ -281,32 +281,15 @@ section > div .content > div .base div input {
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 
-section > div .content > div .base div:nth-child(4) {
-  height: 143px;
-}
-
-section > div .content > div .base div:nth-child(4) textarea {
-  width: 252px;
-  padding: 6px 12px;
-  height: 91px;
-  border: 1px dotted #8e836f;
-  background: #F5F5F3;
-  font-family: sans-serif;
-  font-size: 12px;
-  color: #222;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-}
-
 section > div .content > div .base div select {
+  width: 278px;
+  height: 33px;
+  font-weight: bold;
+}
+
+section > div .content > div .base div textarea {
   width: 252px;
-  padding: 6px 12px;
-  height: 105px;
-  border: 1px dotted #8e836f;
-  background: #F5F5F3;
-  font-family: sans-serif;
-  font-size: 12px;
-  color: #222;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  height: 91px;
 }
 
 section > div .content > div .base div:first-child {
@@ -338,7 +321,7 @@ section > div .content > div .base div:nth-child(6) {
 }
 
 section > div .content > div .base div:nth-child(12) {
-  padding: 25px 0 25px;
+  padding: 25px 0 30px;
 }
 
 section > div .content > div .base div:nth-child(13) {
@@ -382,13 +365,13 @@ section > div .content > div .base p {
   font-family: 'Tahoma', sans-serif;
   font-size: 11px;
   color: #262521;
-  padding-bottom: 25px;
+  padding-bottom: 30px;
 }
 
 section > div .content > div button {
   width: 100px;
   height: 33px;
-  margin: 20px 0 0 0;
+  margin: 20px 0 15px 0;
   padding: 0 15px;
   background: black;
   color: #9C9C9C;

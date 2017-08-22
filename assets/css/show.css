@@ -1,7 +1,6 @@
 .container {
   width: 100%;
   overflow: hidden;
-  background: #F4F4F4;
 }
 
 header {
@@ -514,342 +513,472 @@ header .list3 > span {
   background: url("../image/horizontal-sprite.png") repeat-x 0px -33px;
 }
 
-section div {
-  width: 100%;
-}
-
-section div .list-big {
-  background: url("../image/backimage.scale.1920.684.1496908742541.jpeg") center;
-  background-size: cover;
-  text-align: center;
-}
-
-section div .list-big img {
-  width: 740px;
-  height: 530px;
-  margin: -380px auto;
-}
-
-section div .list-big div {
-  width: 500px;
-  height: 134px;
-  padding: 60px 0 30px;
-  margin: auto;
-  margin-top: 240px;
-  text-align: center;
-  font-style: italic;
-}
-
-section div .list-big div h1 {
-  font-size: 30px;
-  color: #c3a07d;
-  margin: 16px auto;
-}
-
-section div .list-big div p {
-  width: 390px;
-  color: #696969;
-  font-size: 14px;
-  line-height: 21px;
-  padding: 1px 0 0 0;
-  margin: 0 auto;
-  letter-spacing: 1px;
-}
-
-section div .list-s {
-  background: url("../image/backimage.scale.1280.300.1496908742552.jpeg");
-  background-size: cover;
-  height: 300px;
-  font-style: italic;
-  text-align: center;
-  vertical-align: middle;
-}
-
-section div .list-s div {
-  padding-top: 78px;
-}
-
-section div .list-s div h2 {
-  color: #c3a07d;
-  font-size: 30px;
-  line-height: 33px;
-  margin: 15px auto;
-}
-
-section div .list-s div p {
-  margin: 15px auto;
-  line-height: 20px;
-  font-size: 18px;
-  color: #BEBEBE;
-}
-
-section div .list-s div a {
-  display: block;
-  width: 24px;
-  height: 16px;
-  padding: 6px 25px;
-  border: 1px dotted #554728;
-  margin: 30px auto;
-  background-color: rgba(0, 0, 0, 0.5);
-  font-size: 12px;
-  font-style: normal;
-  color: #c3a07d;
-}
-
-section div .list-s div a:hover {
-  transition: background-color 350ms cubic-bezier(0.215, 0.61, 0.355, 1);
-  background: #c3a07d;
-  color: #000;
-}
-
-section div .list-show {
+section {
   overflow: hidden;
 }
 
-section div .list-show .choose {
-  background: #EDEDED;
-}
-
-section div .list-show .choose div {
-  width: 994px;
-  height: 131px;
-  margin: auto;
-  text-align: center;
-}
-
-section div .list-show .choose div h2 {
-  width: 215px;
-  height: 18px;
-  color: #c3a07d;
-  padding-top: 32px;
-  margin: 0px auto 16px;
-  font-size: 21px;
-  font-style: italic;
-}
-
-section div .list-show .choose div i {
-  display: block;
-  width: 60px;
-  height: 11px;
-  background: url("../image/horizontal-sprite-lifting.png") center 2px;
-  margin: 0 auto 16px;
-}
-
-section div .list-show .choose div ul {
-  width: 60%;
-  margin: auto;
-}
-
-section div .list-show .choose div ul li {
-  float: left;
-  padding-left: 15px;
-  font-size: 10px;
-  color: #363636;
-  text-align: center;
-  cursor: pointer;
-}
-
-section div .list-show .choose div ul li span {
-  display: inline-block;
-  width: 9px;
-  height: 9px;
-  border: dotted 1px #c3a07d;
-  margin-right: 6px;
-  line-height: 9px;
-  text-align: center;
-  background: url("../image/sprite1.png");
-}
-
-section div .list-show .choose div ul li span input {
-  width: 9px;
-  height: 9px;
-  outline: none;
-  border: none;
-  margin: 0;
-  opacity: 0;
-}
-
-section div .list-show .choose div ul li:last-child a {
-  color: #363636;
-}
-
-section div .list-show .choose div ul li:last-child span {
-  width: 13px;
-  height: 13px;
-  border: none;
-  background: url("../image/checkerplus.png") no-repeat;
-}
-
-section div .list-show .show {
+section > div > div {
   width: 994px;
   margin: 0 auto;
-  padding: 40px 0 60px;
 }
 
-section div .list-show .show .showbig {
-  float: left;
-  width: 392px;
-  overflow: hidden;
+section > div:first-child {
+  background: #FFF;
 }
 
-section div .list-show .show .showbig .pic {
-  position: relative;
-  height: 801px;
-  text-align: center;
-}
-
-section div .list-show .show .showbig .pic ul li {
-  position: absolute;
-  left: 0px;
-  display: inline-block;
-  width: 392px;
-}
-
-section div .list-show .show .showbig .pic ul li img {
+section > div:first-child .return {
   display: block;
-  margin: auto;
+  width: 116px;
+  height: 40px;
+  padding: 0 11px 0 38px;
+  color: #999;
+  font-size: 11px;
+  line-height: 40px;
 }
 
-section div .list-show .show .showbig .pic ul li img:last-child {
-  position: absolute;
-  top: 480px;
-  left: 304px;
+section > div:first-child .wshow {
+  float: left;
+  width: 420px;
+  margin: 64px 0 0 -20px;
 }
 
-section div .list-show .show .showbig .pic ul li:last-child {
+section > div:first-child .wshow .wshowbig a {
   display: none;
 }
 
-section div .list-show .show .showbig .pic ol {
-  position: absolute;
-  top: 575px;
-  width: 100%;
-  text-align: center;
+section > div:first-child .wshow .wshowbig a img {
+  width: 420px;
+  height: 686px;
 }
 
-section div .list-show .show .showbig .pic ol li {
+section > div:first-child .wshow .wshowbig a:first-child {
+  display: block;
+}
+
+section > div:first-child .wshow .wshowsmall {
+  width: 170px;
+  height: 138px;
+  margin: 18px auto 0;
+}
+
+section > div:first-child .wshow .wshowsmall a {
   display: inline-block;
-  width: 9px;
-  height: 8px;
-  margin-right: 5px;
-  background: url("../image/highlight-radio.png");
-  border-radius: 50%;
 }
 
-section div .list-show .show .showbig .pic ol .active {
-  background: url("../image/highlight-radio_active.png");
+section > div:first-child .wshow .wshowsmall a img {
+  width: 80px;
+  height: 138px;
 }
 
-section div .list-show .show .showbig .pic div {
-  position: absolute;
-  top: 621px;
+section > div:first-child .wshow .wshowsmall a:first-child {
+  display: none;
 }
 
-section div .list-show .show .showbig .pic div h2 {
-  width: 330px;
-  margin: auto;
-  padding: 19px 0 3px 0;
-  color: #696969;
-  font-size: 21px;
-  font-style: italic;
-  font-family: Georgia, "Times New Roman", Times, serif;
+section > div:first-child .shop {
+  float: right;
+  width: 685px;
+  height: 620px;
+  margin: 55px 0 0 -91px;
 }
 
-section div .list-show .show .showbig .pic div p {
-  width: 370px;
-  margin-top: 8px;
-  padding: 0 11px;
-  color: #999;
-  font-size: 11px;
-}
-
-section div .list-show .show .showbig .pic div span {
-  display: block;
-  border: 1px dotted #c3a07d;
-  width: 25px;
-  padding: 12px 22px;
-  background: #FFF;
-  margin: 17px auto 0;
+section > div:first-child .shop h2 {
+  width: 220px;
+  height: 25px;
+  padding: 50px 0 0;
+  margin: 0 auto;
   color: #c3a07d;
-  font-size: 12px;
+  line-height: 26px;
+  font-size: 20px;
+  font-style: italic;
+  font-family: 'Georgia', 'serif';
 }
 
-section div .list-show .show .showsmall {
-  position: relative;
-  float: left;
-  width: 185px;
-  height: 403px;
-  margin: 11px 0 0 10px;
+section > div:first-child .shop h1 {
+  width: 410px;
+  height: 66px;
+  padding: 16px 0 0;
+  margin: 0 auto 16px;
+  color: #696969;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 30px;
+  font-style: italic;
+  font-family: 'Georgia', 'serif';
+}
+
+section > div:first-child .shop span {
+  display: block;
+  height: 24px;
+  margin: 0 0 17px;
+  font-size: 12px;
+  color: #999;
+  letter-spacing: 2px;
+  text-align: center;
+  font-weight: bold;
+}
+
+section > div:first-child .shop i {
+  display: block;
   text-align: center;
 }
 
-section div .list-show .show .showsmall div {
-  height: 350px;
+section > div:first-child .shop i img {
+  cursor: pointer;
 }
 
-section div .list-show .show .showsmall img {
-  display: block;
-  margin: auto;
-}
-
-section div .list-show .show .showsmall img:nth-child(2) {
-  position: absolute;
-  top: 198px;
-  left: 135px;
-}
-
-section div .list-show .show .showsmall i {
-  display: block;
-  width: 60px;
-  height: 11px;
-  margin: 10px auto 16px;
-  background: url("../image/horizontal-sprite-lifting.png") center 2px;
-}
-
-section div .list-show .show .showsmall h2 {
-  width: 150px;
-  line-height: 15px;
-  color: #696969;
-  font-size: 15px;
-  margin: auto;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-section div .list-show .show .showsmall p {
-  width: 185px;
-  height: 14px;
-  margin: 8px auto 0;
-  font-size: 11px;
-  color: #999;
-  line-height: 14px;
-}
-
-section div .list-show .show .showsmall span {
-  display: block;
-  border: 1px dotted #c3a07d;
-  width: 25px;
-  padding: 4px 20px;
-  background: #FFF;
-  margin: 10px auto 10px;
-  color: #c3a07d;
+section > div:first-child .shop h3 {
+  width: 50%;
+  height: 15px;
+  margin: 36px auto;
   font-size: 12px;
+  text-align: center;
+  color: #696969;
+}
+
+section > div:first-child .shop a {
+  position: relative;
+  display: block;
+  width: 400px;
+  height: 60px;
+  border: 1px solid #c3a07d;
+  background: #c3a07d;
+  margin: 20px auto 0;
+}
+
+section > div:first-child .shop a i {
+  position: absolute;
+  left: 8px;
+  top: 5px;
+  width: 50px;
+  height: 50px;
+  background: url("../image/phone.png") no-repeat center center;
+}
+
+section > div:first-child .shop a h4 {
+  width: 260px;
+  height: 28px;
+  padding: 16px 9px;
+  margin-left: 65px;
+  background: #FFF;
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 12px;
+  color: #c3a07d;
+  line-height: 28px;
+  text-align: center;
+}
+
+section > div:first-child .shop a span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 32px;
+  height: 60px;
+  padding: 0 0 0 25px;
+  background: url("../image/arrow-dropdown.png") no-repeat center center;
+  background-color: #FFF;
+}
+
+section > div:first-child .shop .email i {
+  background: url("../image/mail.png") no-repeat center center;
+}
+
+section > div:first-child .shop .email h4 {
+  width: 317px;
+}
+
+section > div:nth-child(2) {
+  clear: both;
+  height: 163px;
+  background: #141414;
+}
+
+section > div:nth-child(2) li {
+  float: left;
+  width: 320px;
+  height: 142px;
+  background: url("../image/closeup-bg_off.png") no-repeat top left;
+  margin: 10px 0 0 4px;
+}
+
+section > div:nth-child(2) li img {
+  width: 310px;
+  height: 136px;
+  margin: 3px;
+}
+
+section > div:nth-child(3) {
+  background: #F5F5F5;
+  padding-top: 43px;
+  overflow: hidden;
+}
+
+section > div:nth-child(3) .sleft {
+  float: left;
+  width: 661px;
+  margin: 0;
+}
+
+section > div:nth-child(3) .sleft > div {
+  width: 467px;
+  height: 797px;
+  margin: 0 6px 0 188px;
+}
+
+section > div:nth-child(3) .sleft > div h2 {
+  width: 378px;
+  height: 23px;
+  padding: 45px 0 7px;
+  margin: 0 0 5px;
+  color: #c3a07d;
+  font-size: 26px;
+  font-style: italic;
+}
+
+section > div:nth-child(3) .sleft > div > div {
+  position: relative;
+  height: 135px;
+}
+
+section > div:nth-child(3) .sleft > div > div div {
+  position: absolute;
+  width: 100px;
+  height: 119px;
+  text-align: center;
+  padding-top: 16px;
+  margin-right: 80px;
+}
+
+section > div:nth-child(3) .sleft > div > div div img {
+  width: 70px;
+  width: 56px;
+}
+
+section > div:nth-child(3) .sleft > div > div div p {
+  height: 16px;
+  margin-top: 9px;
+  font-size: 9px;
+  color: #363636;
+  text-align: center;
+  font-family: 'Helvetica';
+}
+
+section > div:nth-child(3) .sleft > div > div div:first-child {
+  left: -6px;
+}
+
+section > div:nth-child(3) .sleft > div > div div:nth-child(2) {
+  left: 170px;
+}
+
+section > div:nth-child(3) .sleft > div > div div:last-child {
+  left: 355px;
+}
+
+section > div:nth-child(3) .sleft > div ul {
+  width: 310px;
+  margin-bottom: 40px;
+}
+
+section > div:nth-child(3) .sleft > div ul li {
+  height: 14px;
+  padding-bottom: 8px;
+  font-size: 11px;
   line-height: 14px;
-  opacity: 0;
+  color: #999;
 }
 
-section div .list-show .show .showsmall:hover div {
-  transition: all ease 0.5s;
-  background: url("../image/item-bg.png");
-  height: 403px;
+section > div:nth-child(3) .sleft > div ul li b {
+  font-weight: bold;
 }
 
-section div .list-show .show .showsmall:hover div span {
-  transition: all ease 1s;
-  opacity: 1;
+section > div:nth-child(3) .sleft > div ul li a {
+  color: #999;
+}
+
+section > div:nth-child(3) .sleft > div ul li a:hover {
+  color: #292110;
+}
+
+section > div:nth-child(3) .sleft > div ul:first-of-type:last-child {
+  margin: 2px 0 16px 5px;
+}
+
+section > div:nth-child(3) .sleft > div h3 {
+  height: 12px;
+  margin: 14px 0;
+  font-size: 14px;
+  font-family: 'helveticaneue_condensedbold', 'Helvetica', 'Tahoma', 'Geneva', 'Arial', sans-serif;
+  color: #999;
+}
+
+section > div:nth-child(3) .sright {
+  float: left;
+  width: 674px;
+  background: #FFF;
+}
+
+section > div:nth-child(3) .sright > div {
+  width: 467px;
+  height: 797px;
+  margin-left: 45px;
+}
+
+section > div:nth-child(3) .sright > div h2 {
+  height: 23px;
+  padding-bottom: 7px;
+  margin: 45px 0 28px 0;
+  color: #c3a07d;
+  font-size: 26px;
+  font-family: 'Georgia', 'serif';
+  font-style: italic;
+}
+
+section > div:nth-child(3) .sright > div ul {
+  width: 310px;
+  margin-bottom: 25px;
+}
+
+section > div:nth-child(3) .sright > div ul li {
+  height: 14px;
+  padding-bottom: 8px;
+  font-size: 11px;
+  line-height: 14px;
+  color: #999;
+}
+
+section > div:nth-child(3) .sright > div ul li b {
+  font-weight: bold;
+}
+
+section > div:nth-child(3) .sright > div a {
+  display: block;
+  width: 120px;
+  height: 16px;
+  padding: 5px 11px;
+  border: 1px dotted #c3a07d;
+  font-size: 12px;
+  color: #c3a07d;
+}
+
+section > div:nth-child(3) .sright > div a:hover {
+  transition: background-color 350ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  background: rgba(85, 71, 40, 0.1);
+}
+
+section > div:nth-child(3) .sright > div div {
+  position: relative;
+  height: 375px;
+  margin: 20px 0 10px;
+}
+
+section > div:nth-child(3) .sright > div div img {
+  position: absolute;
+}
+
+section > div:nth-child(3) .sright > div div img:first-child {
+  left: 36px;
+}
+
+section > div:nth-child(3) .sright > div div img:last-child {
+  left: -217px;
+}
+
+section > div:nth-child(3) .sbottom {
+  clear: both;
+  width: 600px;
+  height: 105px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+section > div:nth-child(3) .sbottom p {
+  width: 134px;
+  height: 22px;
+  margin: 7px auto 23px;
+  color: #363636;
+  font-size: 9px;
+  font-family: 'Helvetica';
+  font-weight: bold;
+  cursor: pointer;
+}
+
+section > div:last-child {
+  position: relative;
+  height: 567px;
+  text-align: center;
+}
+
+section > div:last-child > img {
+  position: absolute;
+  width: 1920px;
+  height: 567px;
+  right: -286px;
+}
+
+section > div:last-child > div {
+  position: absolute;
+  top: 78px;
+  width: 100%;
+}
+
+section > div:last-child > div div {
+  position: relative;
+  width: 515px;
+  height: 200px;
+  padding: 60px 0 30px;
+  margin: 0 auto;
+  font-family: 'Georgia', 'serif';
+  font-style: italic;
+}
+
+section > div:last-child > div div i {
+  position: absolute;
+  top: 37px;
+  left: 86px;
+  width: 347px;
+  height: 11px;
+  display: block;
+  background: url("../image/horizontal-sprite.png") no-repeat center -20px;
+}
+
+section > div:last-child > div div i:last-child {
+  top: 271px;
+}
+
+section > div:last-child > div div h2 {
+  font-size: 30px;
+  color: #c3a07d;
+  margin-bottom: 10px;
+}
+
+section > div:last-child > div div p {
+  margin-bottom: 18px;
+  line-height: 19px;
+  font-size: 17px;
+  color: #bebebe;
+  letter-spacing: -1px;
+}
+
+section > div:last-child a {
+  display: block;
+  width: 36px;
+  height: 22px;
+  padding: 10px 25px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #c3a07d;
+  font-size: 17px;
+  border: dotted 1px #554728;
+  margin: 8px auto 0;
+}
+
+section > div:last-child a:hover {
+  transition: background-color 350ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  background: #c3a07d;
+  color: black;
 }
 
 footer {
-  clear: both;
   width: 100%;
   height: 721px;
   background: #141414;
@@ -980,4 +1109,56 @@ footer .copy div a {
   float: left;
   color: #aaa;
   padding: 0 3px;
+}
+
+.another {
+  position: relative;
+  overflow: hidden;
+}
+
+.another > img {
+  margin: -260px 0 0 -320px;
+}
+
+.another > div:nth-child(2) {
+  position: absolute;
+  top: 56px;
+  left: 0;
+  overflow: hidden;
+  width: 175px;
+  cursor: pointer;
+}
+
+.another > div:nth-child(2) .atype {
+  height: 255px;
+  background: #cecbc3;
+}
+
+.another > div:nth-child(2) .atype img {
+  width: 99px;
+  height: 163px;
+  margin: 43px 38.5px 48.5px 37.5px;
+}
+
+.another > div:nth-child(2) .adetial {
+  width: 166px;
+  height: 73px;
+  padding: 5px;
+  background: #121212;
+}
+
+.another > div:nth-child(2) .adetial img {
+  width: 166px;
+  height: 73px;
+  margin: 0;
+}
+
+.another .close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: url("../image/zoom-close.png");
+  cursor: pointer;
 }
