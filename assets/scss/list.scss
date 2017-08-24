@@ -662,6 +662,7 @@ section {
             }
 
             .show {
+                overflow: hidden;
                 width: 994px;
                 margin: 0 auto;
                 padding: 40px 0 60px;
@@ -672,8 +673,7 @@ section {
                     overflow: hidden;
 
                     .pic {
-                        position: relative;
-                        height: 801px;
+                        position: relative;height: 801px;
                         text-align: center;
 
                         ul {

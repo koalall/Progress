@@ -1,0 +1,84 @@
+{
+    "shiba": [
+    {
+        "id": 1,
+        "img": "assets/image/his/1755-1-sm_bg.jpg",
+        "year": "1755",
+        "desc": "江诗丹顿的诞生年份"
+    },
+    {
+        "id": 2,
+        "img": "assets/image/his/1755-2_bg.jpg",
+        "year": "1755",
+        "desc": "江诗丹顿的诞生年份"
+    },
+    {
+        "id": 3,
+        "img": "assets/image/his/1785_bg.jpg",
+        "year": "1785",
+        "desc": "江诗丹顿的诞生年份"
+    },
+    {
+        "id": 4,
+        "img": "assets/image/his/1790_bg.jpg",
+        "year": "1790",
+        "desc": "江诗丹顿的诞生年份"
+    }],
+    "oumei": [
+
+        {
+            "id": 1,
+            "img": "image/2-1-1.jpg",
+            "name": "BAKBANG"
+        },
+        {
+            "id": 2,
+            "img": "image/2-1-2.jpg",
+            "name": "BAKBANG"
+        },
+        {
+            "id": 3,
+            "img": "image/2-1-3.jpg",
+            "name": "BAKBANG"
+        },
+        {
+            "id": 4,
+            "img": "image/2-1-4.jpg",
+            "name": "BAKBANG"
+        },
+        {
+            "id": 5,
+            "img": "image/2-1-5.jpg",
+            "name": "BAKBANG"
+        }
+
+    ],
+    "rihan": [
+
+        {
+            "id": 1,
+            "img": "image/3-1-1.jpg",
+            "name": "BAKBANG"
+        },
+        {
+            "id": 2,
+            "img": "image/3-1-2.jpg",
+            "name": "BAKBANG"
+        },
+        {
+            "id": 3,
+            "img": "image/3-1-3.jpg",
+            "name": "BAKBANG"
+        },
+        {
+            "id": 4,
+            "img": "image/3-1-4.jpg",
+            "name": "BAKBANG"
+        },
+        {
+            "id": 5,
+            "img": "image/3-1-5.jpg",
+            "name": "BAKBANG"
+        }
+    ]
+}

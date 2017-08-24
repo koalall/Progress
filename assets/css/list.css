@@ -681,6 +681,7 @@ section div .list-show .choose div ul li:last-child span {
 }
 
 section div .list-show .show {
+  overflow: hidden;
   width: 994px;
   margin: 0 auto;
   padding: 40px 0 60px;
