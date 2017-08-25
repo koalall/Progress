@@ -12,8 +12,6 @@ $(function() {
 
     //  公共部分 头部结束
 
-
-
     // ==============================     list     start      =============================
 
     // list 点击 筛选 多选框效果 开始
@@ -26,6 +24,7 @@ $(function() {
             $(this).find('span').css('background-position', '-36px -320px');
 
             var shaixuan = $(this).text()
+            // setTimeout(function() { loadfilter(shaixuan) }, 800);
             loadfilter(shaixuan);
         } else {
             $('.list-show .choose li span').css('background-position', '0 0');
@@ -77,6 +76,7 @@ $(function() {
                             </li>`;
             })
             jsontip.append(strHtml); //显示处理后的数据 
+            $("#jsontip li").show();
         })
     }
 
@@ -86,11 +86,10 @@ $(function() {
             var strHtml = "";
             $.each(data, function(key, value) {
                 if (value.desc.match(shaixuan)) {
-                    console.log(value);
                     strHtml += `<li class="showsmall">
                                 <a href="./show.html">
                                     <div>
-                                        <img src="${value.img}">
+                                        <img src="${value.img}" class="data">
                                         <img src="assets/image/watch/result-picto_poincon.png">
                                             <i></i>
                                             <h2>${value.title}</h2>
@@ -102,6 +101,10 @@ $(function() {
                 }
             })
             jsontip.html(strHtml); //显示处理后的数据 
+            $.each($("#jsontip li"), function(key, value) {
+                $("#jsontip li").eq(key).delay(key * 350).fadeIn(1000);
+            })
         })
     }
+
 })

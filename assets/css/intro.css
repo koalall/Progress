@@ -603,7 +603,6 @@ section .intropic div a:hover {
 }
 
 section .intros {
-  background: gray;
   width: 100%;
   min-width: 980px;
   height: 100%;
@@ -735,7 +734,6 @@ section .intros .intror > div > div {
   width: 460px;
   height: 360px;
   margin: 0 auto;
-  background: pink;
 }
 
 section .intros .intror > div > div a {

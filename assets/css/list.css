@@ -776,6 +776,7 @@ section div .list-show .show .showbig .pic div span {
 }
 
 section div .list-show .show .showsmall {
+  display: none;
   position: relative;
   float: left;
   width: 185px;

@@ -673,7 +673,8 @@ section {
                     overflow: hidden;
 
                     .pic {
-                        position: relative;height: 801px;
+                        position: relative;
+                        height: 801px;
                         text-align: center;
 
                         ul {
@@ -754,6 +755,7 @@ section {
                 }
 
                 .showsmall {
+                    display: none;
                     position: relative;
                     float: left;
                     width: 185px;

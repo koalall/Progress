@@ -90,6 +90,7 @@ header > div .login-language ul li {
 
 header > div .login-language ul li a {
   clear: both;
+  display: block;
   width: 121px;
   height: 17px;
   padding: 8px 12px;
