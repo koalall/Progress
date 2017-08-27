@@ -34,13 +34,37 @@ $(function() {
         $('footer').show();
     })
 
-    // 点击a 更改背景图片
+    // 划过a 更改背景图片  introl
 
     $('.intros li a').hover(function() {
         var n = $(this).parent().index();
         $('.introl').css({ 'background': 'url("../assets/image/intro/engraver' + n + '.jpg") no-repeat', 'background-size': 'cover' });
     }, function() {
         $('.introl').css('background', 'url("../assets/image/intro/background-poster.jpg")  -277px -338px');
+    })
+
+    // intror
+    // intror  点击事件
+    $('.intror a').click(function() {
+        $('.hid').fadeOut(function() {
+            $('.introl').animate({
+                width: '260px'
+            }, 'slow', function() {
+                $('.intror').animate({
+                    width: '1086px'
+                }, 'slow')
+            })
+        })
+        $('#slider').show();
+    })
+
+    $('#slider').click(function() {
+        $('.hid').fadeIn(function() {
+            $('.intros>div').animate({
+                width: '50%'
+            }, 'slow')
+        })
+        $('#slider').hide();
     })
 
     // 滚动事件
@@ -61,6 +85,14 @@ $(function() {
         $('.scroll>div').css('top', top);
         $('.scrollpic').css('top', top + 51);
     })
+
+    $('#slider').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        sync: "#carousel"
+    });
 
     // ==============================     intro     end    =============================
 
